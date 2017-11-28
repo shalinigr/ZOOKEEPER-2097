@@ -297,7 +297,7 @@ public class FinalRequestProcessor implements RequestProcessor {
             }
             case OpCode.exists: {
                 lastOp = "EXIS";
-                // TODO we need to figure out the security requirement for this!
+                //Removal of TODO since this case works without any security check for existence of the node
                 ExistsRequest existsRequest = new ExistsRequest();
                 ByteBufferInputStream.byteBuffer2Record(request.request,
                         existsRequest);
